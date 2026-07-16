@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Update Your Email Address - Work-Break</title>
+    <style>
+      /* General reset */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+      }
+      .header {
+        text-align: center;
+        padding: 20px 0;
+      }
+      .header img {
+        width: 120px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #777;
+        padding: 10px 20px;
+      }
+      .button {
+        display: inline-block;
+        padding: 12px 24px;
+        color: #fff;
+        background-color: #0073e6;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #005bb5;
+      }
+      .ii a[href] {
+        color: #fff !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <h2>Update Your Email Address</h2>
+      </div>
+
+      <!-- Content Section -->
+      <div class="content">
+        <p>Hi {{userName}},</p>
+        <p>
+          We received a request to update your email address for your Work-Break
+          account. To confirm your new email address, please click the link
+          below:
+        </p>
+
+        <!-- Update Email Button -->
+        <p style="text-align: center">
+          <a
+            style="color: #fff !important"
+            href="{{verificationLink}}"
+            class="button"
+            >Confirm Email Update</a
+          >
+        </p>
+
+        <!-- Alternative Link -->
+        <p>
+          If the button doesn’t work, you can copy and paste the following link
+          into your browser:
+        </p>
+        <p>
+          <a href="{{verificationLink}}" style="color: #0073e6"
+            >{{verificationLink}}</a
+          >
+        </p>
+
+        <!-- Closing Section -->
+        <p>
+          If you did not request this change, please ignore this email or
+          contact our support team immediately.
+        </p>
+        <p>Best regards,</p>
+        <p>The Work-Break Team</p>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="footer">
+        <p>
+          If you have any questions, feel free to reach out to our support team
+          at <a href="mailto:info@work-break.com">info@work-break.com</a>.
+        </p>
+        <p>&copy; {{currentYear}} Work-Break, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

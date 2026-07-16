@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Google Calendar Synced - Work-Break</title>
+    <style>
+        /* General reset */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .content {
+            padding: 30px 20px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            padding: 20px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #e6f4ea;
+            color: #1e8e3e;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            color: #fff !important;
+            background-color: #0073e6;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .feature-list {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e8e3e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Calendar Successfully Synced!</h2>
+        </div>
+
+        <div class="content">
+            <p>Hi,</p>
+
+            <div style="text-align: center;">
+                <div class="status-badge">Connection Active</div>
+            </div>
+
+            <p>
+                Great news! Your Google Calendar is now officially connected to <strong>Work-Break</strong>.
+                Your productivity timeline and Google events are now <strong>fully integrated</strong>.
+            </p>
+
+            <p><strong>What happens now?</strong></p>
+            <ul class="feature-list">
+                <li><strong>Smart Timeline:</strong> Your breaks, tasks, and meetings will now appear automatically in
+                    your calendar.</li>
+                <li><strong>Real-time Updates:</strong> Changes made in Work-Break will reflect on your calendar
+                    instantly.</li>
+                <li><strong>Automatic Focus:</strong> We'll help you find the best gaps for recovery between your
+                    existing appointments.</li>
+            </ul>
+
+            <p style="text-align: center">
+                <a href="https://work-break.com" class="button">Go to Dashboard</a>
+            </p>
+
+            <p>
+                If you didn't authorize this connection, please secure your account immediately or contact our support
+                team.
+            </p>
+
+            <p>Happy working (and resting)!</p>
+            <p>Best regards,<br>The Work-Break Team</p>
+        </div>
+
+        <div class="footer">
+            <p>
+                Need help? Reach out to
+                <a href="mailto:info@work-break.com" style="color: #0073e6;">info@work-break.com</a>.
+            </p>
+            <p>&copy; {{currentYear}} Work-Break, Inc. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
